@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="define_support_recyclerview">year;owner</string>
+    <string name="library_support_recyclerview_author">Fingerlinks</string>
+    <string name="library_support_recyclerview_authorWebsite">http://www.fingerlinks.org/</string>
+    <string name="library_support_recyclerview_libraryName">Support Recyclerview</string>
+    <string name="library_support_recyclerview_libraryDescription">Support Utils</string>
+    <string name="library_support_recyclerview_libraryVersion">@string/version</string>
+    <string name="library_support_recyclerview_isOpenSource">true</string>
+    <string name="library_support_recyclerview_repositoryLink">https://github.com/fingerlinks/Support-Utils</string>
+    <string name="library_support_recyclerview_licenseId">apache_2_0</string>
+    <string name="library_support_recyclerview_owner">Fingerlinks</string>
+    <string name="library_support_recyclerview_year">2016</string>
+</resources>

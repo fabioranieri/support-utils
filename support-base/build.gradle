@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'bintray-release'
+
+android {
+    compileSdkVersion setup.compileSdk
+    buildToolsVersion setup.buildTools
+
+    defaultConfig {
+        minSdkVersion setup.minSdk
+        targetSdkVersion setup.targetSdk
+        versionCode 1
+        versionName "${versions.supportLib}.${versions.fingerLib}"
+    }
+
+    buildTypes {
+        all {
+            resValue "string", "version", "${versions.supportLib}.${versions.fingerLib}"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile "com.android.support:appcompat-v7:${versions.supportLib}"
+}
+
+publish {
+    userOrg = 'dev-fingerlinks'
+    groupId = 'org.fingerlinks.mobile.android'
+    artifactId = 'support-base'
+    publishVersion = "${versions.supportLib}.${versions.fingerLib}"
+}

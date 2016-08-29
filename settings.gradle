@@ -1,0 +1,1 @@
+include ':app', ':support-base', ':support-widget', ':support-realm', ':support-recyclerview'

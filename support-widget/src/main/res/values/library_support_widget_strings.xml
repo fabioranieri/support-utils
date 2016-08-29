@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="define_support_widget">year;owner</string>
+    <string name="library_support_widget_author">Fingerlinks</string>
+    <string name="library_support_widget_authorWebsite">http://www.fingerlinks.org/</string>
+    <string name="library_support_widget_libraryName">Support Widget</string>
+    <string name="library_support_widget_libraryDescription">Support Utils</string>
+    <string name="library_support_widget_libraryVersion">@string/version</string>
+    <string name="library_support_widget_isOpenSource">true</string>
+    <string name="library_support_widget_repositoryLink">https://github.com/fingerlinks/Support-Utils</string>
+    <string name="library_support_widget_licenseId">apache_2_0</string>
+    <string name="library_support_widget_owner">Fingerlinks</string>
+    <string name="library_support_widget_year">2016</string>
+</resources>
