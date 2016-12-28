@@ -1,1 +1,1 @@
-include ':app', ':support-base', ':support-widget', ':support-realm', ':support-recyclerview'
+include ':app', ':support-base', ':support-widget', ':support-recyclerview', ':support-ui'

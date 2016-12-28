@@ -96,6 +96,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         setStatusBarColor(ContextCompat.getColor(this, color));
     }
 
+    public void setLightStatusBar(View view) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            view.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
+    }
+
     public Activity getActivity() {
         return this;
     }

@@ -3,15 +3,13 @@
 buildscript {
 
     ext {
-        setup = [compileSdk: 24,
-                 buildTools: "24.0.1",
+        setup = [compileSdk: 25,
+                 buildTools: "25.0.2",
                  minSdk    : 9,
-                 targetSdk : 24]
+                 targetSdk : 25]
         versions = [
                 fingerLib: "1",
-                supportLib: "24.2.0",
-                realmLib: "1.2.0",
-                gsonLib: "2.7"]
+                supportLib: "25.1.0"]
     }
 
     repositories {
@@ -19,9 +17,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.3'
-        classpath 'com.novoda:bintray-release:0.3.4'
-        classpath "io.realm:realm-gradle-plugin:${versions.realmLib}"
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.novoda:bintray-release:0.4.0'
     }
 }
 

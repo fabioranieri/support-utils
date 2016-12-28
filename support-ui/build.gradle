@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'bintray-release'
-apply plugin: 'realm-android'
 
 android {
     compileSdkVersion setup.compileSdk
@@ -10,11 +9,11 @@ android {
         minSdkVersion setup.minSdk
         targetSdkVersion setup.targetSdk
         versionCode 1
-        versionName "${versions.realmLib}.${versions.fingerLib}"
+        versionName "${versions.supportLib}.${versions.fingerLib}"
     }
     buildTypes {
         all {
-            resValue "string", "version", "${versions.realmLib}.${versions.fingerLib}"
+            resValue "string", "version", "${versions.supportLib}.${versions.fingerLib}"
         }
         release {
             minifyEnabled false
@@ -27,12 +26,12 @@ android {
 }
 
 dependencies {
-    compile "com.google.code.gson:gson:${versions.gsonLib}"
+    compile "com.android.support:design:${versions.supportLib}"
 }
 
 publish {
     userOrg = 'dev-fingerlinks'
     groupId = 'org.fingerlinks.mobile.android'
-    artifactId = 'support-realm'
-    publishVersion = "${versions.realmLib}.${versions.fingerLib}"
+    artifactId = 'support-ui'
+    publishVersion = "${versions.supportLib}.${versions.fingerLib}"
 }
