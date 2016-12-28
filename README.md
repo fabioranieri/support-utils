@@ -24,5 +24,5 @@ dependencies {
 }
 ```
 How to read version code... 25.0.1.1
-25.0.1 support libs version
-1 support utils version for current support libs
+- 25.0.1 support libs version
+- 1 support utils version for current support libs
